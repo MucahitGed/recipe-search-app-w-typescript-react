@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+ /* :root{
+    --color1 : #070f4e;
+    --color2 : #0039a6;
+    --color3 : #3ab1c8;
+    --color4 : #f5ebeb;
+}  */
+ :root{
+    --color1 : #283739;
+    --color2 : #2c5d63;
+    --color3 : #a2c11c;
+    --color4 : #e0e0e0;
+} 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background:  var(--color1);
+    color: var(--color4);
+    overflow-x: hidden;
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.header h1:hover , .result-header:hover{
+    color: var(--color3);
+}
+.header h1{
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+.header form{
+    width: 630px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form input{
+    width: 90%;
+    height: 30px;
+    border: 2px solid var(--color2);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 5px;
+    background-color: var(--color4);
+    border-right: none;
+}
+form button{
+    height: 30px;
+    width: 10%;
+    background-color: var(--color3);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 2px solid var(--color2);
+    color: var(--color4);
+    border-left: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--color2);
+}
+input:focus{
+    outline: none;
+}
+.result-header{
+    font-size: 18px;
+}
+.recipe-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 20px;
+    }
+.recipe{
+    background-color: var(--color2);
+    margin: 20px;
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.logo{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.recipe-header{
+    font-size: 24px;
+    color: var(--color1);
+    margin-top: 5px;
+}
+.recipe-header:hover{
+    color: var(--color3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.recipee{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipee p{
+    margin-top: 2px;
 }
